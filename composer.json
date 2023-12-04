@@ -31,7 +31,11 @@
         ]
     },
     "scripts": {
-        "post-create-project-cmd": "php scripts/template-tools/replace-placeholders.php"
+        "post-create-project-cmd": [
+            "php scripts/template-tools/replace-placeholders.php",
+            "composer dump-autoload",
+            "php public/index.php"
+        ]
     }  
 }
 
