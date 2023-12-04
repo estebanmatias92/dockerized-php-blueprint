@@ -16,9 +16,9 @@ if (empty($newNamespace)) {
 // Parsear con toPascalCase en cualquier caso
 $newNamespace = toPascalCase($newNamespace);
 // Developer's data
-echo "Your name: "
+echo "Your name: ";
 $authorName = trim(fgets(STDIN));
-echo "Your email: "
+echo "Your email: ";
 $authorEmail = trim(fgets(STDIN));
 
 // Preparing directory, files and patterns to search and replace
