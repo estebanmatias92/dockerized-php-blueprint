@@ -1,0 +1,7 @@
+name: "dockerized-php"
+services:
+  app:
+    build:
+      context: .
+    env_file:
+      - .env.prod

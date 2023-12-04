@@ -1,0 +1,8 @@
+name: dockerized-php
+services:
+  app:
+    build:
+      context: .
+      target: development
+    env_file: 
+      - .env.dev

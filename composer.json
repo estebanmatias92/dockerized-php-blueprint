@@ -1,0 +1,39 @@
+{
+    "name": "estebanmatias92/dockerized-php-blueprint",
+    "description": "Composer package that serves as foundation for building PHP + Composer services with docker. This just provides a basic environment for vanilla PHP + Composer (type: project), running in solo containers. Can be extended to suit microservices architecture.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "{{ placeholder.authors.name }}",
+            "email": "{{ placeholder.authors.email }}"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpcs/standardscomposer-plugin": "*",
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpstan/phpstan": "^0.12.96",
+        "vimeo/psalm": "^4.16",
+        "mockery/mockery": "^1.4",
+        "fzaninotto/faker": "^1.9",
+        "symfony/var-dumper": "^5.3",
+        "phpmd/phpmd": "@stable"
+    },    
+    "autoload": {
+        "psr-4": {
+            "{{ placeholder.namespace }}\\": "src/"
+        },
+        "files": [
+            "src/helper_module/utilities.php"
+        ]
+    },
+    "scripts": {
+        "post-create-project-cmd": "php scripts/template-tools/replace-placeholders.php"
+    }  
+}
+
+
+
