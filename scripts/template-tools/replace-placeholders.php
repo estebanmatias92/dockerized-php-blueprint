@@ -27,7 +27,7 @@ $fileNames = ['*.php', 'composer.json']; // Files to process, you can use expres
 $replacements = [
     "{{ placeholder.namespace }}" => $newNamespace,
     "{{ placeholder.authors.name }}" => $authorName,
-    "{{ placeholder.authors.email }}" => $authorEmail
+    "placeholder.authors@email" => $authorEmail
 ]; // Patterns and their replacements
 
 // Instantiate the FileProcessor

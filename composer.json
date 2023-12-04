@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "{{ placeholder.authors.name }}",
-            "email": "{{ placeholder.authors.email }}"
+            "email": "placeholder.authors@email.com"
         }
     ],
     "minimum-stability": "stable",
